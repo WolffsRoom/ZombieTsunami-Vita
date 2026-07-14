@@ -67,11 +67,30 @@ The expected result includes the modified libraries (`libcgame.so`, `libfmodeven
 
 The game is controlled entirely via the PS Vita touchscreen, preserving the gameplay style of the mobile version.
 
-| Control | Action |
-|:---:|---|
-| Touchscreen | Controls the entire interface and game actions |
-| <img src="Assets/SonyButtons/circle.png" height="22" alt="Circle Button"> | Pauses the game |
-| **START** | Pauses the game |
+<div align="center">
+  <table>
+    <thead>
+      <tr>
+        <th align="center">Control</th>
+        <th align="center">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">Touchscreen</td>
+        <td align="center">Controls the entire interface and game actions</td>
+      </tr>
+      <tr>
+        <td align="center"><img src="Assets/SonyButtons/circle.png" height="22" alt="Circle Button"></td>
+        <td align="center">Pauses the game</td>
+      </tr>
+      <tr>
+        <td align="center"><strong>START</strong></td>
+        <td align="center">Pauses the game</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## Screenshots
 
