@@ -13,7 +13,7 @@ Unofficial port of **Zombie Tsunami** for PlayStation Vita, based on the Android
 
 This project was developed using the so-loader boilerplate and [VitaGL](https://github.com/rinnegatamante/vitagl), an OpenGL library for PlayStation Vita created by Rinnegatamante. The Zombie Tsunami APK was analyzed using artificial intelligence, and after several compilations, tests, and attempts, it was possible to adapt the game to run on the PS Vita.
 
-This port does not distribute the game’s commercial data. Users must provide their own compatible APK; the patcher extracts the necessary data and applies the modifications prepared for the Vita.
+This port does not distribute the game's commercial data. Users must provide their own compatible APK; the patcher extracts the necessary data and applies the modifications prepared for the Vita.
 
 ## Requirements
 
@@ -30,7 +30,6 @@ This port does not distribute the game’s commercial data. Users must provide t
 | Game | Zombie Tsunami |
 | Version | 1.6.0 |
 | SHA-256 | `B73B109B0FCCDFF8296DA8FE1FE12CCEEEAB17F7DAEE9FE53E229E438299AD42` |
-
 
 The patcher checks the APK's size and SHA-256 hash before starting. Other versions are not accepted, as they may contain libraries or resources that are incompatible with the port.
 
@@ -72,7 +71,23 @@ The game is controlled entirely via the PS Vita touchscreen, preserving the game
 |:---:|---|
 | Touchscreen | Controls the entire interface and game actions |
 | <img src="Assets/SonyButtons/circle.png" height="22" alt="Circle Button"> | Pauses the game |
+| **START** | Pauses the game |
 
+## Screenshots
+
+<p align="center">
+  <img src="Assets/Prints/2026-07-14-000337-423991.png" width="48%" alt="Zombie Tsunami gameplay screenshot 1">
+  <img src="Assets/Prints/2026-07-14-000345-331834.png" width="48%" alt="Zombie Tsunami gameplay screenshot 2">
+  <img src="Assets/Prints/2026-07-14-000424-304127.png" width="48%" alt="Zombie Tsunami gameplay screenshot 3">
+  <img src="Assets/Prints/2026-07-14-000434-280668.png" width="48%" alt="Zombie Tsunami gameplay screenshot 4">
+  <img src="Assets/Prints/2026-07-14-000458-554996.png" width="48%" alt="Zombie Tsunami gameplay screenshot 5">
+  <img src="Assets/Prints/2026-07-14-000531-054427.png" width="48%" alt="Zombie Tsunami gameplay screenshot 6">
+  <img src="Assets/Prints/2026-07-14-000551-123963.png" width="48%" alt="Zombie Tsunami gameplay screenshot 7">
+</p>
+
+## Known Issues
+
+- Some interfaces can freeze the game. For example, opening **Starter Pack**—which originally redirects to the Google Play Store—causes the game to become unresponsive.
 
 ## Legal Notice
 
