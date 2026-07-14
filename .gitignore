@@ -1,0 +1,5 @@
+Release/Build_Patch/APK/*.apk
+Release/Build_Patch/src/build/
+Release/Build_Patch/src/dist/
+Release/Build_Patch/src/__pycache__/
+*.pyc

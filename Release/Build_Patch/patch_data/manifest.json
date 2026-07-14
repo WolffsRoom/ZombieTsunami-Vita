@@ -1,0 +1,666 @@
+{
+  "format": 1,
+  "game": "Zombie Tsunami",
+  "apk_name": "01 Zombie Tsunami 1.6.0 (2).apk",
+  "apk_size": 45464813,
+  "apk_sha256": "b73b109b0fccdff8296da8fe1fe12cceeeab17f7daee9fe53e229e438299ad42",
+  "output_folder": "zombietsunami",
+  "files": [
+    {
+      "output": "assets/res/com/gfx/font/BerlinSansFBDemi-Bold.ttf",
+      "source": "assets/res/com/gfx/font/BerlinSansFBDemi-Bold.ttf",
+      "size": 96852,
+      "sha256": "4c50d832f4e1401e226566159735dae932dd224d795ac57772061096117e4147",
+      "mode": "patch",
+      "patch": "0005.bsdiff"
+    },
+    {
+      "output": "assets/res/com/gfx/font/MicrosoftYaHei.ttf",
+      "source": "assets/res/com/gfx/font/MicrosoftYaHei.ttf",
+      "size": 3863912,
+      "sha256": "f478d9ad476902a8ef7a6a57462630d6ac44e2e0a61c16bd07ff8accc063ff37",
+      "mode": "patch",
+      "patch": "0006.bsdiff"
+    },
+    {
+      "output": "assets/res/shaders/default.vsh",
+      "source": "assets/res/shaders/default.vsh",
+      "size": 314,
+      "sha256": "b0bc2ec66a57de6e7dca08490fe97a1f6cc3b3a0493bd0d321693d1c8328ba0d",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/shaders/no_texture.fsh",
+      "source": "assets/res/shaders/no_texture.fsh",
+      "size": 164,
+      "sha256": "c66c20e31c86925cfdcbb00d6e7176e9ecca595cce1c11cb978c739bc37f42f4",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/shaders/texture_modulate.fsh",
+      "source": "assets/res/shaders/texture_modulate.fsh",
+      "size": 256,
+      "sha256": "6e18b21f3585bbcf946428387af217c8404decef5cf80e4bea806ef07f8881a5",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/shaders/texture_replace.fsh",
+      "source": "assets/res/shaders/texture_replace.fsh",
+      "size": 219,
+      "sha256": "d575dd611e5007ba3cb9105e3335607145cfde40d449dcde9d4db37eef726dd8",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/fmod/zc_sound_design01_bank00.fsb.jet",
+      "source": "assets/res/zombies/com/fmod/zc_sound_design01_bank00.fsb.jet",
+      "size": 3115680,
+      "sha256": "920e7e52c2c536924acbfd000eb898e39c3d4bfb86cf7432da9272481f7276a8",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/fmod/zc_sound_design02.fev",
+      "source": "assets/res/zombies/com/fmod/zc_sound_design02.fev",
+      "size": 41402,
+      "sha256": "0bf82dcd4dfbd320760bbbdcfc8f54e8bda1eca3db97c3f2e379d9c5f7f86c7d",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_beach.spr",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_beach.spr",
+      "size": 19214,
+      "sha256": "106d46bd28b069edbbdc536b0662cdb8d7ccb9e50e6e77d8647e56f4a2254fab",
+      "mode": "patch",
+      "patch": "0019.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_beach_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_beach_16bpp_pvrgz.jet",
+      "size": 1863571,
+      "sha256": "b4dd883bb416cd0a6f42164a2629bd94f5e9a2032d60a2b1b73adffa08e02d7b",
+      "mode": "patch",
+      "patch": "0020.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_beach_320_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_beach_320_16bpp_pvrgz.jet",
+      "size": 547150,
+      "sha256": "ecfa4535e4037e783d4a683c2beae52821757a0607b41fb6865291d7b5911c44",
+      "mode": "patch",
+      "patch": "0021.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_canyon.spr",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_canyon.spr",
+      "size": 27776,
+      "sha256": "f1bb11a050f86e666907efd114537a78467f49f8281caad0290b204b6b17d3b3",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_canyon_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_canyon_16bpp_pvrgz.jet",
+      "size": 1906441,
+      "sha256": "1f25251a7fbc267e2c6029a2c158f36b4e6c7ee8433072a3f8c66009f163ee03",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_canyon_320_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_canyon_320_16bpp_pvrgz.jet",
+      "size": 665802,
+      "sha256": "3f0f4c4551ade8225bd7c56e5c084f9f080f8107324932a6233cf30a004aed95",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_egypt.spr",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_egypt.spr",
+      "size": 23025,
+      "sha256": "937d1f6bd4f2952acf7af7dab1e6e3e0c3aea72f11821e5efafce71c6c846427",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_egypt_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_egypt_16bpp_pvrgz.jet",
+      "size": 2093256,
+      "sha256": "75a6dce6fd1bf7d0e1b17ebd0324e3e9ab6bdd029998d19e5a4957e99a1f965d",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_egypt_320_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_egypt_320_16bpp_pvrgz.jet",
+      "size": 723727,
+      "sha256": "d5adf9fbbc7ff4f1bfd24e73f055042b4886118e004c4e59b2aa09f45c1bdb61",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_la.spr",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_la.spr",
+      "size": 64935,
+      "sha256": "52de818ad117c7d2f9f39bc75274dc1cb814917bf6f2bc2bf77d64ad0b59821d",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_la_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_la_16bpp_pvrgz.jet",
+      "size": 1997567,
+      "sha256": "911d33cf94ef80d55fa2c86a872dfd5fdbbe75c8ddb0fd66906c9fe9881fa434",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_la_320_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_la_320_16bpp_pvrgz.jet",
+      "size": 658213,
+      "sha256": "50b66f3ba727a7c02649435d7f9cbd37a3b824eeaad79772734cfab1a1123a71",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_mexico.spr",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_mexico.spr",
+      "size": 36804,
+      "sha256": "3f9f0b0a3d22afa3d31ebabba943fe2e4753f06d1b4352412dd0a77487711cf7",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_mexico_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_mexico_16bpp_pvrgz.jet",
+      "size": 2284746,
+      "sha256": "475933de0d91d42380d61745aabef933f6f1a8d6d35d49b6c63b3e8f1706dad1",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_mexico_320_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_mexico_320_16bpp_pvrgz.jet",
+      "size": 760385,
+      "sha256": "c634dac110605cf6aeb7bda9e36c19dffcd67217db9c749324d4ab61caa62165",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_mountain.spr",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_mountain.spr",
+      "size": 16409,
+      "sha256": "b3d39fc61c7155693359d2cc1502998b119879a41f275c5db31da8ec3ef24b75",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_mountain_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_mountain_16bpp_pvrgz.jet",
+      "size": 1299332,
+      "sha256": "7b26e409711c3eb3bbc6aeb555cdbd3efe9346327a9ac570c4e0f964963378dd",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_mountain_320_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_mountain_320_16bpp_pvrgz.jet",
+      "size": 374084,
+      "sha256": "d0471fba5d05ec443cfdba7f9d4cc62775c9ee72090835201d0cea5e4b709a43",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_ny.spr",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_ny.spr",
+      "size": 100470,
+      "sha256": "a85b8727feea9db44999daefc6dd87c5daae2ca1c15f50e44ac393ae09a4147a",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_ny_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_ny_16bpp_pvrgz.jet",
+      "size": 2105188,
+      "sha256": "6ea97841678646e9a48ce6b498ac603e05d6a28ea5be933ac6e8f9dffdd02a08",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_ny_320_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_ny_320_16bpp_pvrgz.jet",
+      "size": 740326,
+      "sha256": "47be9c406702ee541eae5b02ec750f7bac5b73a80cbe88053b799a9974c05be3",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_paques.spr",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_paques.spr",
+      "size": 95697,
+      "sha256": "d428b5ed2763052c14e791c059ceab51fba63f51d4573c9db630a2d626962079",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_paques_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_paques_16bpp_pvrgz.jet",
+      "size": 1711392,
+      "sha256": "4dca7b431178092d3e11bbb32146a305c098ad99c2cc7b013f90d8be266bc02d",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_paques_320_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_paques_320_16bpp_pvrgz.jet",
+      "size": 537178,
+      "sha256": "fbf3567eff1a186f4aa58a1827d2fd1e2be934b0cc376247d1451b57a1f40492",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_paris.spr",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_paris.spr",
+      "size": 25339,
+      "sha256": "1ff4058c6899b22f0f861ac9d6f6dd6be8a3fa763427e571b7582cfb1bd94923",
+      "mode": "patch",
+      "patch": "0043.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_paris_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_paris_16bpp_pvrgz.jet",
+      "size": 1944121,
+      "sha256": "608a43521f034bc5164c961a814932f50c4512051ed46a76260af4d4ac8d8b00",
+      "mode": "patch",
+      "patch": "0044.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bg_paris_320_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/bg_paris_320_16bpp_pvrgz.jet",
+      "size": 559311,
+      "sha256": "1a770e49f9b148afdc4da609f60d34179fefba12e1814362f4bc07972904f6c6",
+      "mode": "patch",
+      "patch": "0045.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bonus.spr",
+      "source": "assets/res/zombies/com/gfx/sprites/bonus.spr",
+      "size": 3886,
+      "sha256": "5522c5cc8850131be2b7871f6881b1f14f90703548e49d2e62ed38d27a18f850",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bonus_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/bonus_16bpp_pvrgz.jet",
+      "size": 98174,
+      "sha256": "f355a7565d25326129f12b866ba94c0866893e0be61c216211d820ee2b2dc7f1",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/bonus_320_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/bonus_320_16bpp_pvrgz.jet",
+      "size": 42064,
+      "sha256": "829b92503db76e618e5f317cf152ad9de959008f357524566b5629d3185c25f8",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/cars.spr",
+      "source": "assets/res/zombies/com/gfx/sprites/cars.spr",
+      "size": 376999,
+      "sha256": "86491bf90a8f7d0e66026ebdbd297cb4164cb60dfc66ae0399d0723d3f394e77",
+      "mode": "patch",
+      "patch": "0049.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/cars_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/cars_16bpp_pvrgz.jet",
+      "size": 1890988,
+      "sha256": "92321aeff4741c30dbf784beb6c992504e2f1072881c0e2c44a490533881db58",
+      "mode": "patch",
+      "patch": "0050.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/cars_320_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/cars_320_16bpp_pvrgz.jet",
+      "size": 603077,
+      "sha256": "2e7d6477fbe49f867d0cc6f55cbd3aaf2e1f7fa8955d9fe26e9ec3ecc3f6095e",
+      "mode": "patch",
+      "patch": "0051.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/fb_menu.spr",
+      "source": "assets/res/zombies/com/gfx/sprites/fb_menu.spr",
+      "size": 10077,
+      "sha256": "c9ab39921fd03dade768e210bfd0de683ffedbb527c4083989947ae3f5df9b25",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/fb_menu_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/fb_menu_16bpp_pvrgz.jet",
+      "size": 80775,
+      "sha256": "82362d8abc21f95640df5c4d60562b3e1ebd601ebdddfabb506af091d5dd877a",
+      "mode": "patch",
+      "patch": "0053.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/fb_menu_320_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/fb_menu_320_16bpp_pvrgz.jet",
+      "size": 28966,
+      "sha256": "af0f45938267a56425a984a16d52ef1ec949788588ff215d187c5d26d398932e",
+      "mode": "patch",
+      "patch": "0054.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/hall.spr",
+      "source": "assets/res/zombies/com/gfx/sprites/hall.spr",
+      "size": 7390,
+      "sha256": "df8c37674c323fd211788e667fff544b56e02c33918cc5825624b9e0b0aec93b",
+      "mode": "patch",
+      "patch": "0055.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/hall_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/hall_16bpp_pvrgz.jet",
+      "size": 476722,
+      "sha256": "098d83616ebc451b78cae93ff93ccac6fa421288dd67e90e95bef6019a9b6663",
+      "mode": "patch",
+      "patch": "0056.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/hall_320_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/hall_320_16bpp_pvrgz.jet",
+      "size": 143755,
+      "sha256": "bb43f8e14f55d775b6707a65e38bc1d0bb580d7c429b6623832bd8726e2081c4",
+      "mode": "patch",
+      "patch": "0057.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/hud.spr",
+      "source": "assets/res/zombies/com/gfx/sprites/hud.spr",
+      "size": 45194,
+      "sha256": "5408ce72d2b92e6e71d328d44d35b8f524650b81a2399fb9145b0931478007e3",
+      "mode": "patch",
+      "patch": "0058.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/hud_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/hud_16bpp_pvrgz.jet",
+      "size": 423705,
+      "sha256": "d9549d46df48935be4baae74ce15f778badf4867f0f631feef43f4f6fab975d2",
+      "mode": "patch",
+      "patch": "0059.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/hud_2.spr",
+      "source": "assets/res/zombies/com/gfx/sprites/hud_2.spr",
+      "size": 5997,
+      "sha256": "1f605dd2bb2282aae8ddb6be764280470549b526ba1ae6c63aac473af4aad799",
+      "mode": "patch",
+      "patch": "0060.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/hud_2_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/hud_2_16bpp_pvrgz.jet",
+      "size": 86770,
+      "sha256": "0f2f1eb67b352b26fe857873c3e236b21a9e280ee392067cd280aeecf9cf3f2e",
+      "mode": "patch",
+      "patch": "0061.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/hud_2_320_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/hud_2_320_16bpp_pvrgz.jet",
+      "size": 30141,
+      "sha256": "ebc7fc90d42d29af13d8815872c3f985a2b262b7805799f7ecc6a979b26eeb9b",
+      "mode": "patch",
+      "patch": "0062.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/hud_320_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/hud_320_16bpp_pvrgz.jet",
+      "size": 146411,
+      "sha256": "3193f333b76471164f7c86c4bafccfe13c9938a906d2a87ffa6f01939e8d3d06",
+      "mode": "patch",
+      "patch": "0063.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/loading_mobigame.spr",
+      "source": "assets/res/zombies/com/gfx/sprites/loading_mobigame.spr",
+      "size": 625,
+      "sha256": "97e1460e21a4e591bdb8e7df61f557bda51e3fe72cc79147849d4eab65396900",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/loading_mobigame_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/loading_mobigame_16bpp_pvrgz.jet",
+      "size": 258126,
+      "sha256": "ff92d5af176b03bbd54bdce56a4edaadf0b373408882837e7a0fd5dbae4399f1",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/loading_mobigame_320_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/loading_mobigame_320_16bpp_pvrgz.jet",
+      "size": 87383,
+      "sha256": "9d6b2a0a037e01708a627a374fbbd7245ef35d65d735b64e1a6e28dde360f611",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/menu.spr",
+      "source": "assets/res/zombies/com/gfx/sprites/menu.spr",
+      "size": 189203,
+      "sha256": "39c0022a07f7c1d924f77913ba04003ac0017a26e768c77e1de0f11ffc0392d7",
+      "mode": "patch",
+      "patch": "0067.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/menu_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/menu_16bpp_pvrgz.jet",
+      "size": 1237840,
+      "sha256": "4757b813b91dcc972c1d5217b2dab8c6be5f6f039f3f855f5a85be4def460d38",
+      "mode": "patch",
+      "patch": "0068.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/menu_320_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/menu_320_16bpp_pvrgz.jet",
+      "size": 417254,
+      "sha256": "93e4a9375570dddf2fa66e5bcf7acdcc4231c8fe3b22b9c6ce2999a42c0b0ede",
+      "mode": "patch",
+      "patch": "0069.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/menu_titles.spr",
+      "source": "assets/res/zombies/com/gfx/sprites/menu_titles.spr",
+      "size": 7616,
+      "sha256": "77b24438ca7eef94892429327c365289941f968c0352fe7127cac1c139648948",
+      "mode": "patch",
+      "patch": "0070.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/menu_titles_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/menu_titles_16bpp_pvrgz.jet",
+      "size": 209157,
+      "sha256": "fefe750f3ec845dcbbcbd1d18b5da2bf45db8c29fb22497480df4ef8cc3f4e67",
+      "mode": "patch",
+      "patch": "0071.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/menu_titles_320_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/menu_titles_320_16bpp_pvrgz.jet",
+      "size": 64524,
+      "sha256": "770139f33822b236654a429161b415f241f685d6d599b892f872d8b6ecd1b19a",
+      "mode": "patch",
+      "patch": "0072.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/scratch_here.spr",
+      "source": "assets/res/zombies/com/gfx/sprites/scratch_here.spr",
+      "size": 425,
+      "sha256": "4a5d7cd8ac1ffcdd0ba5b6d0f31e5a5fa79c73a4a54eaef2aab4db04d6bc4667",
+      "mode": "patch",
+      "patch": "0073.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/scratch_here_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/scratch_here_16bpp_pvrgz.jet",
+      "size": 61272,
+      "sha256": "7c41ef296ab7fa02ef37e1c7c0da4175145c21c0161e80122fd4b45e9255f377",
+      "mode": "patch",
+      "patch": "0074.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/scratch_here_320_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/scratch_here_320_16bpp_pvrgz.jet",
+      "size": 20103,
+      "sha256": "8a62cae59802c0905bb8b1d1dbe6bea5afda769540f5b49d60451b94cf782872",
+      "mode": "patch",
+      "patch": "0075.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/ufo.spr",
+      "source": "assets/res/zombies/com/gfx/sprites/ufo.spr",
+      "size": 2367,
+      "sha256": "1b9fb3a89b40c72211f2723b26a2ca415b7c9b376d56a29afc5390be7cff9482",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/ufo_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/ufo_16bpp_pvrgz.jet",
+      "size": 192969,
+      "sha256": "2c85b490424acffb3383efd6d0e5652f6311d416081b4891573aebe91075632d",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/ufo_320_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/ufo_320_16bpp_pvrgz.jet",
+      "size": 76795,
+      "sha256": "2825e67a0ae0c03a354fdb6b8b09a399931ef9abf638076c7fdcd42bed27366f",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/zombis.spr",
+      "source": "assets/res/zombies/com/gfx/sprites/zombis.spr",
+      "size": 425431,
+      "sha256": "fb2919677602173a53fad8c6742798ab9dfd31738392124bb697cb02db866c16",
+      "mode": "patch",
+      "patch": "0079.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/zombis_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/zombis_16bpp_pvrgz.jet",
+      "size": 2153509,
+      "sha256": "16554e291b46fc934348142a58b69cbecabb843ba0b52f5b29789f41f92cec41",
+      "mode": "patch",
+      "patch": "0080.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/sprites/zombis_320_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/sprites/zombis_320_16bpp_pvrgz.jet",
+      "size": 698410,
+      "sha256": "d0b763ddd9f5c6faa1c55ff3242cb00dc3c2f7c359db55e611a0c951a23bd1eb",
+      "mode": "patch",
+      "patch": "0081.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/ticket_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/ticket_16bpp_pvrgz.jet",
+      "size": 411442,
+      "sha256": "3f1e66b81386358c672e327e4807ba34fd65f475bb2fb88a13415f718b29b3ab",
+      "mode": "patch",
+      "patch": "0082.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/ticket_320_16bpp_pvrgz.jet",
+      "source": "assets/res/zombies/com/gfx/ticket_320_16bpp_pvrgz.jet",
+      "size": 116800,
+      "sha256": "9ac014cddce6d24e34e11e01320583935da7c34d3bb816afb74d1c23b71703b1",
+      "mode": "patch",
+      "patch": "0083.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/gfx/ticket_readme.txt",
+      "source": "assets/res/zombies/com/gfx/ticket_readme.txt",
+      "size": 159,
+      "sha256": "db5ad757d7347805eb436f13009a7233a7f7d8153cb63a1a3c5719b2df1ab560",
+      "mode": "patch",
+      "patch": "0084.bsdiff"
+    },
+    {
+      "output": "assets/res/zombies/com/mp3/ingame_loop.mp3",
+      "source": "assets/res/zombies/com/mp3/ingame_loop.mp3",
+      "size": 2984753,
+      "sha256": "b7d4b2469dc73e6d77697697ac934bbb80a7772c7230fd0a431c7171b74febf6",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/mp3/music_menu_shop.mp3",
+      "source": "assets/res/zombies/com/mp3/music_menu_shop.mp3",
+      "size": 211020,
+      "sha256": "4beb394063a486ef7a307889c3be8e2fb1b93dad0708a466cc2501f5776d386e",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/mp3/music_menu_title.mp3",
+      "source": "assets/res/zombies/com/mp3/music_menu_title.mp3",
+      "size": 731535,
+      "sha256": "70743169182ec495fa459b09f90176d50c308f6ecea6e0b5daa48fe3cd80be59",
+      "mode": "copy"
+    },
+    {
+      "output": "assets/res/zombies/com/text/text.bin",
+      "source": "assets/res/zombies/com/text/text.bin",
+      "size": 137827,
+      "sha256": "bce4c8dad47b0861731445a676c9b2f9a9ff495ba076dbc580ccb7c0653b00d8",
+      "mode": "patch",
+      "patch": "0090.bsdiff"
+    },
+    {
+      "output": "assets/vg_close.png",
+      "source": "assets/vg_close.png",
+      "size": 6839,
+      "sha256": "9cabce048f692a3022fdff0bcad0776984ab7cb6b5d93eddb098a69d26933ca3",
+      "mode": "patch",
+      "patch": "0091.bsdiff"
+    },
+    {
+      "output": "assets/vg_cta.png",
+      "source": "assets/vg_cta.png",
+      "size": 6437,
+      "sha256": "1d2bceff160d879f51e6a0a2ee4f98c1c50fc0664f61417b930cb975e02b83e9",
+      "mode": "patch",
+      "patch": "0092.bsdiff"
+    },
+    {
+      "output": "assets/vg_cta_disabled.png",
+      "source": "assets/vg_cta_disabled.png",
+      "size": 5734,
+      "sha256": "1cd45da843165ae7719c18ca28a172f5a6ce83ecd8e6c31233ae91a3849f3b91",
+      "mode": "patch",
+      "patch": "0093.bsdiff"
+    },
+    {
+      "output": "assets/vg_mute_off.png",
+      "source": "assets/vg_mute_off.png",
+      "size": 7107,
+      "sha256": "304def0ae869c9e88731a6c255f384ae6a9f20a4bfa2f18e89c32b6974d533cb",
+      "mode": "patch",
+      "patch": "0094.bsdiff"
+    },
+    {
+      "output": "assets/vg_mute_on.png",
+      "source": "assets/vg_mute_on.png",
+      "size": 6924,
+      "sha256": "4118b9f53b276f47d3bfdfadc440b41f5ea639158964ca14e4a1b429733080a5",
+      "mode": "patch",
+      "patch": "0095.bsdiff"
+    },
+    {
+      "output": "assets/vg_timer.png",
+      "source": "assets/vg_timer.png",
+      "size": 5680,
+      "sha256": "c143ceb4b451ca9ccea1aff8c896c1854356c83d18a0ffc8ce522a7b5557e4f0",
+      "mode": "patch",
+      "patch": "0096.bsdiff"
+    },
+    {
+      "output": "libcgame.so",
+      "source": "lib/armeabi-v7a/libcgame.so",
+      "size": 4296176,
+      "sha256": "6a4fd7c1c5f55cd2db5193293a92cebf3865a76ff04beea2e3f5a3c453b37d7a",
+      "mode": "patch",
+      "patch": "0097.bsdiff"
+    },
+    {
+      "output": "libfmodevent.so",
+      "source": "lib/armeabi-v7a/libfmodevent.so",
+      "size": 370664,
+      "sha256": "eda0d77aa12f834f90d3d41b814153fcd384daf8844a5cf03edfa3d9c1a43dd7",
+      "mode": "patch",
+      "patch": "0098.bsdiff"
+    },
+    {
+      "output": "libfmodex.so",
+      "source": "lib/armeabi-v7a/libfmodex.so",
+      "size": 871096,
+      "sha256": "30c8c99dc99458d2e1ef8e3c8b56c6a22aa2941dd43e955c30deba30884c8ac0",
+      "mode": "patch",
+      "patch": "0099.bsdiff"
+    }
+  ]
+}
