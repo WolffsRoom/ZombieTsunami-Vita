@@ -19,8 +19,8 @@ O port não distribui os dados comerciais do jogo. O usuário precisa fornecer s
 
 - PlayStation Vita desbloqueado;
 - VitaShell ou outro gerenciador de arquivos compatível;
-- [ZombieTsunami-v1.0.vpk](ZombieTsunami-v1.0.vpk);
-- pacote [Patcher v1.0](Release/Patcher%20v1.0/);
+- [ZombieTsunami-v1.0.vpk](https://github.com/WolffsRoom/ZombieTsunami-Vita/releases/download/v1.0/ZombieTsunami-v1.0.vpk);
+- [Patcher v1.0](https://github.com/WolffsRoom/ZombieTsunami-Vita/releases/download/v1.0/Patcher.v1.0.zip);
 - APK compatível do **Zombie Tsunami 1.6.0**.
 
 ### APK suportado
