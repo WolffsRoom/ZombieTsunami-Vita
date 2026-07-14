@@ -11,7 +11,7 @@ Port não oficial de **Zombie Tsunami** para PlayStation Vita, baseado na versã
 
 ## Sobre o port
 
-Este projeto foi desenvolvido usando o boilerplate do so-loader. O APK do Zombie Tsunami foi analisado com auxílio de inteligência artificial e, depois de várias compilações, testes e tentativas, foi possível adaptar o jogo para funcionar no PS Vita.
+Este projeto foi desenvolvido usando o boilerplate do so-loader e o [VitaGL](https://github.com/rinnegatamante/vitagl), biblioteca OpenGL para PlayStation Vita criada por Rinnegatamante. O APK do Zombie Tsunami foi analisado com auxílio de inteligência artificial e, depois de várias compilações, testes e tentativas, foi possível adaptar o jogo para funcionar no PS Vita.
 
 O port não distribui os dados comerciais do jogo. O usuário precisa fornecer seu próprio APK compatível; o patcher extrai os dados necessários e aplica as modificações preparadas para o Vita.
 
@@ -72,6 +72,32 @@ O jogo é controlado inteiramente pela tela de toque do PS Vita, preservando a f
 | Tela de toque | Controla toda a interface e as ações do jogo |
 | <img src="Assets/SonyButtons/circle.png" height="22" alt="Botão Círculo"> | Pausa o jogo |
 
+## Como o patcher funciona
+
+O patcher:
+
+1. localiza o único arquivo `.apk` presente na pasta `APK`;
+2. valida o APK suportado por tamanho e SHA-256;
+3. extrai os recursos necessários diretamente do APK do usuário;
+4. aplica diferenças binárias aos arquivos modificados para o Vita;
+5. verifica individualmente todos os arquivos gerados;
+6. cria a estrutura final dentro de `VitaFiles/zombietsunami`.
+
+O pacote final contém 87 arquivos verificados. Nenhuma instalação de Python ou de ferramentas adicionais é necessária para executar o patcher.
+
+## Estrutura da release
+
+```text
+Release/
+├── Patcher v1.0/       # pacote destinado ao usuário
+│   ├── APK/            # coloque o APK original aqui
+│   ├── VitaFiles/      # saída gerada pelo patcher
+│   └── ZombieTsunamiPatcher.exe
+├── Build_Patch/        # fontes e ferramentas de manutenção do patcher
+├── v1.0/               # arquivos da release
+└── ZombieTsunami-Vita.png
+```
+
 ## Desenvolvimento do patcher
 
 A pasta `Release/Build_Patch` contém o ambiente usado para criar ou atualizar o patcher:
@@ -100,4 +126,5 @@ Ferramentas de inteligência artificial foram usadas para analisar o APK, auxili
 - **Port by MeninoSung**
 - **Patcher by WolffsRoom**
 - Boilerplate e base de carregamento: **so-loader**
+- Renderização gráfica: [VitaGL by Rinnegatamante](https://github.com/rinnegatamante/vitagl)
 - Jogo original: seus respectivos desenvolvedores e detentores dos direitos
