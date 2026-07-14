@@ -122,6 +122,6 @@ This repository must not be used to distribute commercial APKs or game data. Ple
 - Graphics rendering: [VitaGL by Rinnegatamante](https://github.com/rinnegatamante/vitagl)
 - Original game: their respective developers and rights holders
 
-## Use of Artificial Intelligence
+## IA Notice
 
 Artificial intelligence tools (Codex ChatGPT) were used to analyze the APK, assist in investigating incompatibilities, and support the iterative compilation and testing process. Full functionality was achieved after several attempts and adjustments to the port.
