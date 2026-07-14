@@ -1,41 +1,134 @@
-# Zombie Tsunami Vita — bring-up port
+<p align="center">
+  <img src="Assets/ZombieTsunami-Vita.png" alt="Zombie Tsunami - PS Vita Port">
+</p>
 
-Port experimental de **Zombie Tsunami 1.7.0 (versionCode 31)** para PlayStation Vita, baseado no [soloader-boilerplate](https://github.com/v-atamanenko/soloader-boilerplate).
+# Zombie Tsunami - PS Vita Port
 
-Este repositório contém somente o loader e código de compatibilidade. O APK e os dados proprietários do jogo não são redistribuídos.
+Unofficial wrapper/port of **Zombie Tsunami** for PlayStation Vita.
 
-## Estado
+The port operates by loading the official Android ARMv7 executable directly into memory, linking its dependencies to native functions, and applying the necessary patches for it to run correctly. In practice, this creates a lightweight Android-like environment where the original executable can run natively without modification.
 
-O bring-up inicial está implementado:
+> Port by **MeninoSung**  
+> Patcher by **WolffsRoom**
 
-- carregamento ARMv7/EABI5 de `libfmodex.so`, `libfmodevent.so` e `libcgame.so`, nessa ordem;
-- resolução estática de todos os 357 imports de `libcgame.so` e dos imports das duas bibliotecas FMOD;
-- inicialização do renderer nativo em 960×544;
-- loop de `nativeRender`, touch frontal e botões de voltar/pausa;
-- stubs FalsoJNI para serviços Android sem equivalente no Vita: anúncios, Facebook, Parse, billing e notificações;
-- preparação reproduzível dos dados a partir do APK original.
+## About the port
 
-Ainda é um **protótipo de bring-up**, não uma release jogável confirmada. Ele precisa ser compilado com VitaSDK-softfp e executado em um Vita real para coletar os primeiros logs FalsoJNI/crash dump. Os callbacks Java de decodificação de bitmap permanecem como stubs e podem precisar de implementação caso o jogo os use durante a inicialização.
+This repository is based on the soloader-boilerplate by _elliencode_ (https://github.com/v-atamanenko/soloader-boilerplate). The loader provides a tailored, minimalistic Android-like environment to run the official ARMv6 game executable on the PS Vita.
 
-## APK suportado
+This project was developed using the so-loader boilerplate and [VitaGL](https://github.com/rinnegatamante/vitagl), an OpenGL library for PlayStation Vita created by Rinnegatamante. The Zombie Tsunami APK was analyzed using artificial intelligence, and after several compilations, tests, and attempts, it was possible to adapt the game to run on the PS Vita.
 
-Arquivo analisado: `Zombie Tsunami 1.7.0 (31).apk`
+_This port does not distribute the game's commercial data. Users must provide their own compatible APK; the patcher extracts the necessary data and applies the modifications prepared for the Vita._
 
-```text
-SHA-256: 125A911E4BE945F18184A726445627AA52F01595718CF696E84293D182CEF919
-ABI: armeabi-v7a
-Pacote: net.mobigame.zombietsunami
+## Setup Instructions (For End Users)
+
+In order to properly install the game, you'll have to follow these steps precisely:
+
+- Install [kubridge](https://github.com/TheOfficialFloW/kubridge/releases/) and [FdFix](https://github.com/TheOfficialFloW/FdFix/releases/) by copying `kubridge.skprx` and `fd_fix.skprx` to your taiHEN plugins folder (usually `ux0:tai`) and adding two entries to your `config.txt` under `*KERNEL`:
+  
+```
+  *KERNEL
+  ux0:tai/kubridge.skprx
+  ux0:tai/fd_fix.skprx
 ```
 
-## Preparar os dados
+**Note** Don't install fd_fix.skprx if you're using repatch plugin.
 
-No PowerShell:
+- **Optional**: Install [PSVshell](https://github.com/Electry/PSVshell/releases) to overclock your device to 500Mhz.
+- Install `libshacccg.suprx`, if you don't have it already, by following [this guide](https://samilops2.gitbook.io/vita-troubleshooting-guide/shader-compiler/extract-libshacccg.suprx).
+- Obtain your copy of *Zombie Tsunami 1.6.0* legally from the Google Play store in form of an `.apk` file.
+- A compatible version APK for **Zombie Tsunami 1.6.0**.
+
+### Supported APK
+
+| Property | Value |
+|---|---|
+| Game | Zombie Tsunami |
+| Version | 1.6.0 |
+| SHA-256 | `B73B109B0FCCDFF8296DA8FE1FE12CCEEEAB17F7DAEE9FE53E229E438299AD42` |
+
+_The patcher checks the APK's size and SHA-256 hash before starting. Other versions are not accepted, as they may contain libraries or resources that are incompatible with the port._
+
+### How to Generate the Game Files
+
+1. Open the `Release/Patcher v1.0` folder.
+2. Place only one compatible APK inside the `APK` folder.
+3. Run `ZombieTsunamiPatcher.exe`.
+4. Select the interface language.
+5. Review the detected APK and confirm to start the process.
+6. Wait for the verification and generation to reach 100%.
+7. Upon completion, the patcher will create the following folder:
+
+   ```text
+   VitaFiles/zombietsunami
+   ```
+
+_The patcher offers an interface in English, Brazilian Portuguese, Spanish, French, European Portuguese, Italian, Russian, and Japanese._
+
+### Installation on PS Vita
+
+1. Install [ZombieTsunami-vX.X.vpk](https://github.com/WolffsRoom/ZombieTsunami-Vita/releases/latest) on your *PS Vita* using VitaShell or FMVita.
+2. Copy the `zombietsunami` folder generated by the patcher to `ux0:data/`.
+3. Verify that the files are located at this path:
+
+   ```text
+   ux0:data/zombietsunami/
+   ```
+
+4. Launch **Zombie Tsunami** from the LiveArea.
+
+The expected result includes the modified libraries (`libcgame.so`, `libfmodevent.so`, and `libfmodex.so`) and the assets folder used by the game.
+
+## Controls
+
+The game is controlled entirely via the PS Vita touchscreen, preserving the gameplay style of the mobile version.
+
+<div align="center">
+  <table>
+    <thead>
+      <tr>
+        <th align="center">Control</th>
+        <th align="center">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">Touchscreen</td>
+        <td align="center">Controls the entire interface and game actions</td>
+      </tr>
+      <tr>
+        <td align="center"><img src="Assets/SonyButtons/circle.png" height="22" alt="Circle Button"></td>
+        <td align="center">Pauses the game</td>
+      </tr>
+      <tr>
+        <td align="center"><strong>START</strong></td>
+        <td align="center">Pauses the game</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+_The analog sticks aren't mapped yet because the original game is controlled via touch._
+
+## Screenshots
+
+<p align="center">
+  <img src="Assets/Prints/2026-07-14-000337-423991.png" width="48%" alt="Zombie Tsunami gameplay screenshot 1">
+  <img src="Assets/Prints/2026-07-14-000345-331834.png" width="48%" alt="Zombie Tsunami gameplay screenshot 2">
+  <img src="Assets/Prints/2026-07-14-000424-304127.png" width="48%" alt="Zombie Tsunami gameplay screenshot 3">
+  <img src="Assets/Prints/2026-07-14-000434-280668.png" width="48%" alt="Zombie Tsunami gameplay screenshot 4">
+  <img src="Assets/Prints/2026-07-14-000458-554996.png" width="48%" alt="Zombie Tsunami gameplay screenshot 5">
+  <img src="Assets/Prints/2026-07-14-000531-054427.png" width="48%" alt="Zombie Tsunami gameplay screenshot 6">
+  <img src="Assets/Prints/2026-07-14-000551-123963.png" width="48%" alt="Zombie Tsunami gameplay screenshot 7">
+</p>
+
+## Build Instructions (For Developers)
+Without PowerShell:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\tools\prepare-data.ps1 "C:\caminho\Zombie Tsunami 1.7.0 (31).apk"
+powershell -ExecutionPolicy Bypass -File .\tools\prepare-data.ps1 “C:\path\Zombie Tsunami.apk”
 ```
 
-O script valida o SHA-256 e cria `prepared-data` com esta estrutura:
+The script validates the SHA-256 hash and creates the `prepared-data` folder with the following structure:
 
 ```text
 prepared-data/
@@ -45,46 +138,42 @@ prepared-data/
 └── libfmodex.so
 ```
 
-Copie o conteúdo da pasta para:
+# Compile
 
-```text
-ux0:data/zombietsunami/
-```
+Requirements:
 
-## Compilar
-
-Requisitos:
-
-- [VitaSDK-softfp](https://github.com/vitasdk-softfp) com `VITASDK` configurado;
-- dependências usadas pelo boilerplate, incluindo vitaGL, vitashark, OpenSLES e bibliotecas de áudio;
-- `kubridge.skprx` instalado no Vita.
+- [VitaSDK-softfp](https://github.com/vitasdk-softfp) with `VITASDK` configured;
+- dependencies used by the boilerplate, including vitaGL, vitashark, OpenSLES, and audio libraries;
+- `kubridge.skprx` installed on the Vita.
 
 ```bash
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
 cmake --build build
 ```
 
-O build gera `build/zombie_tsunami.vpk`. Para o primeiro teste, use `Debug`: ele habilita os logs do loader. Para logging JNI completo, descomente `FALSOJNI_DEBUGLEVEL=0` em `CMakeLists.txt`.
+## Known Issues
 
-## Controles iniciais
+- Some interfaces can freeze the game. For example, opening **Starter Pack**, which originally redirects to the Google Play Store, causes the game to become unresponsive.
 
-- touch frontal: toque do Android;
-- Círculo: voltar;
-- Start: alternar pausa/retomada;
-- X, Quadrado e Triângulo: callbacks dos três botões de diálogo do jogo.
+## Legal Notice
 
-Os analógicos ainda não estão mapeados porque o jogo original é controlado por touch.
+This is an unofficial, free, non-commercial port. **Zombie Tsunami** and all its features belong to their respective developers and copyright holders.
 
-## Primeiro teste no Vita
+This repository must not be used to distribute commercial APKs or game data. Please use only legally obtained files and support the original developers.
 
-1. Instale `kubridge.skprx` e reinicie o Vita.
-2. Instale `zombie_tsunami.vpk`.
-3. Copie os dados para `ux0:data/zombietsunami/`.
-4. Inicie o jogo e capture o output de debug (TTY/PSMLogUSB) ou o crash dump.
-5. Procure principalmente por `GetMethodID`, `GetFieldID`, `Unknown symbol` ou pelo primeiro PC de crash.
+## Credits
 
-Veja [PORTING_NOTES.md](PORTING_NOTES.md) para os detalhes técnicos e os próximos pontos de investigação.
+The loader is derived from the MIT project `soloader-boilerplate` by Volodymyr Atamanenko and contributors. FalsoJNI is distributed in `lib/falso_jni` under its MIT license. Rights to Zombie Tsunami and its assets belong to their respective owners.
 
-## Créditos e licença
+- **Port by MeninoSung**
+- **Patcher by WolffsRoom**
+- _elliencode_ for the .so loader.
+- Rinnegatamante for vitaGL.
+- Graphics rendering: [VitaGL by Rinnegatamante](https://github.com/rinnegatamante/vitagl)
+- Original game: their respective developers and rights holders
 
-O loader deriva do projeto MIT `soloader-boilerplate`, de Volodymyr Atamanenko e contribuidores. FalsoJNI está vendorizado em `lib/falso_jni` sob sua licença MIT. Os direitos de Zombie Tsunami e de seus assets pertencem aos respectivos titulares.
+---
+
+## IA Notice
+
+Artificial intelligence tools (Codex ChatGPT) were used to analyze the APK, assist in investigating incompatibilities, and support the iterative compilation and testing process. Full functionality was achieved after several attempts and adjustments to the port.
