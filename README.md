@@ -2,7 +2,7 @@
   <img src="Assets/ZombieTsunami-Vita.png" alt="Zombie Tsunami - PS Vita Port">
 </p>
 
-# Zombie Tsunami — PS Vita Port
+# Zombie Tsunami - PS Vita Port
 
 Unofficial port of **Zombie Tsunami** for PlayStation Vita, based on the Android version of the game and run via **so-loader**.
 
@@ -106,7 +106,7 @@ The game is controlled entirely via the PS Vita touchscreen, preserving the game
 
 ## Known Issues
 
-- Some interfaces can freeze the game. For example, opening **Starter Pack**—which originally redirects to the Google Play Store—causes the game to become unresponsive.
+- Some interfaces can freeze the game. For example, opening **Starter Pack**, which originally redirects to the Google Play Store, causes the game to become unresponsive.
 
 ## Legal Notice
 
