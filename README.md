@@ -13,7 +13,7 @@ The port operates by loading the official Android ARMv7 executable directly into
 
 ## About the port
 
-This repository is based on the Android SO Loader by TheFloW (https://github.com/TheOfficialFloW/gtasa_vita). The loader provides a tailored, minimalistic Android-like environment to run the official ARMv6 game executable on the PS Vita.
+This repository is based on the soloader-boilerplate by _elliencode_ (https://github.com/v-atamanenko/soloader-boilerplate). The loader provides a tailored, minimalistic Android-like environment to run the official ARMv6 game executable on the PS Vita.
 
 This project was developed using the so-loader boilerplate and [VitaGL](https://github.com/rinnegatamante/vitagl), an OpenGL library for PlayStation Vita created by Rinnegatamante. The Zombie Tsunami APK was analyzed using artificial intelligence, and after several compilations, tests, and attempts, it was possible to adapt the game to run on the PS Vita.
 
@@ -133,7 +133,7 @@ This repository must not be used to distribute commercial APKs or game data. Ple
 
 - **Port by MeninoSung**
 - **Patcher by WolffsRoom**
-- TheFloW for the original .so loader.
+- _elliencode_ for the .so loader.
 - Rinnegatamante for vitaGL.
 - Graphics rendering: [VitaGL by Rinnegatamante](https://github.com/rinnegatamante/vitagl)
 - Original game: their respective developers and rights holders
